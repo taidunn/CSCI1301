@@ -25,6 +25,7 @@ namespace Lab_Exercise_2
          int number1 = 0;
          int number2 = 0;
          int abs = 0;
+         int absdiff = 0;
 
 
 
@@ -83,16 +84,20 @@ namespace Lab_Exercise_2
 
          if (number1 > number2)
          {
-            abs = number1 - number2;
-            Console.WriteLine($"\n The absolute value of {number1} and {number2}" +
-               $"is {abs}.");
+            abs = number1 - number2; 
          }
          else
          {
-            abs = number2 - number1;
-            Console.WriteLine($"\n The absolute value of {number1} and {number2}" +
-               $"is {abs}.");
+            abs = number2 - number1;     
          }
+
+         Console.WriteLine($"\n The absolute value of {number1} and {number2}" +
+              $" is {abs}.");
+
+         absdiff = (abs % 5);
+         Console.WriteLine($"\nThe remainder of the absolute difference " +
+            $"({abs}) modulus 5 is {absdiff}.");
+
 
          Console.WriteLine("\n( •_•)O*¯`·.¸.·´¯`°Q(•_• )");
          //*********************************************************************
